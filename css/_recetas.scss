@@ -1,0 +1,54 @@
+.contenedorGridsRecetas {
+    background-color:#efe0a059;
+    width: 100%;
+    display: grid;   
+    justify-content: center;
+    grid-template-areas: 
+    "img1 img2"
+    "img4 img5";
+    grid-gap: 10px;
+}
+
+.cajaImgReceta1 {
+    border-bottom: solid 2px;
+    border-color: #342222 ;
+    margin-right: 10px;
+}
+
+@media  only screen and (max-width: 759px) {
+
+    .contenedorGridsRecetas {
+    grid-template-areas: 
+    "img1"
+    "img2"
+    "img4"
+    "img5";
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+     }
+     .cajaImgReceta1 {
+        border-bottom: solid 2px;
+        border-color: #342222 ;
+        margin-right: 10px;
+        
+    }
+    .cajaImgReceta2 {
+        border-bottom: solid 2px;
+        border-color: #342222 ;
+        margin-right: 10px;
+        
+    }
+
+    .img1 {
+        grid-area: "img1";
+    }
+    .img2 {
+        grid-area: "img2";
+    }
+    .img3 {
+        grid-area: "img4";
+    }
+    .img4 {
+        grid-area: "img5";
+    }
+}

@@ -1,0 +1,111 @@
+//nosotros //
+
+.nosotrosHc {
+    max-width: 700px;
+    width: 50%;
+    padding: 45px 20px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-family: $fontPrincipal ;
+    color: $colorTexto;
+    text-align: center;
+    .tituloN {
+        font-size: 5em;  
+        letter-spacing: 10px;
+    }
+    .subtN {
+        font-size: 2em;
+        font-style: oblique;
+    }
+    .parrafoN {
+        font-size: 35px;       
+        padding: 50px;
+        background-color: #efe0a050;
+        .linkIg {
+            font-weight: bold;
+            color: $colorPrimero;
+            text-decoration: none;
+        }       
+
+    }
+    .imagenesNosotros {
+        display: grid;
+        grid-template-columns: 1 1fr;
+        grid-template-areas: 
+        'cartaTomi' 
+        
+        'cartaNacho';
+        grid-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;              
+        padding: 25px;
+        .cartaTomi {
+            grid-area: cartaTomi;
+        }
+        .cartaNacho {
+            grid-area: cartaNacho;
+        }
+            
+        .cartasNosotros {
+            background-color: #efe0a050 ;
+            
+            border-radius: 25px 0 0 30px;
+            text-align: center;
+            border: none;
+            
+
+            .card-text {
+                font-size: 20px;                
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 759px) { 
+    
+    .nosotrosHc {
+        width: 100%;
+    }
+   
+    .imagenesNosotros {        
+        grid-template-columns: repeat (1, 1fr);
+        grid-gap: 10px;     
+        grid-template-areas: "cartaTomi"
+        "cartaNacho";       
+            .cartaTomi {
+                grid-area: "cartaTomi";
+                }
+            .cartaNacho {
+                grid-area: "cartaNacho";
+                }
+        }
+        .card-text {
+            font-weight: bold;
+            font-size: 50px;
+        }
+    
+}
+
+
+@media screen and (min-width: 768px ) {
+
+    .nosotrosHc {
+        width: 90%;
+       
+    }
+}
+  
+@media screen and (min-width: 320px) {
+    .nosotrosHc {
+        .tituloN {
+            font-size: 50px;  
+            
+        }
+        .subtN {
+            font-size: 30px;
+            font-style: oblique;}
+    }
+}

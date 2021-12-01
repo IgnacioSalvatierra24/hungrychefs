@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ESTILO HEADER */
+body {
+  font-family: "Teko", sans-serif; }
+
+.navBarHungry {
+  border-bottom: solid 2.5px;
+  border-color: #342222e5;
+  background-color: #d9653ec7; }
+
+.ulMenuHungry {
+  justify-content: center; }
+
+.opcNav {
+  font-size: 25px;
+  font-weight: bold;
+  color: #342222; }
+
+.logoHungryChefs {
+  width: 200px;
+  height: 200px;
+  transition: ease-in 2s; }
+
+.navBarHungry .menuResponsive:hover {
+  /* background-color:; */
+  padding: 10px;
+  color: #EFE0A0;
+  transition: 0.4s;
+  border-radius: 0 0 10px;
+  cursor: pointer; }
+
+.navBarHungry .ulMenuHungry .opcNav:hover {
+  padding: 10px;
+  color: #EFE0A0;
+  transition: 0.4s;
+  font-style: oblique;
+  border-radius: 0 0 10px; }
+
+/* ESTILO FOOTER */
+.footerHc {
+  width: 100%;
+  background-color: #d9653ec7;
+  border-top: solid 2.5px;
+  border-color: #342222e5;
+  font-family: "Teko", sans-serif; }
+
+.footerHc .contenidoFooter {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0; }
+
+.footerHc .contenidoFooter .cajasFooter .logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hashtagPagina {
+  text-align: center; }
+
+.footerHc .contenidoFooter .cajasFooter .logoFooter .logoHcF {
+  width: 200px; }
+
+.footerHc .contenidoFooter .cajasFooter .hashtagPagina {
+  color: #342222e5;
+  font-style: italic;
+  margin-top: 100px;
+  font-size: 30px; }
+
+.rrssHc {
+  margin-top: 100px; }
+
+.footerHc .contenidoFooter .cajasFooter .logoRedes .redesSocIcon {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #ffff;
+  background-color: #efe0a070;
+  text-align: center; }
+
+.footerHc .contenidoFooter .cajasFooter .logoRedes .redesSocIcon:hover {
+  transition: 0.5s;
+  background-color: #E9BC00;
+  color: #342222; }
+
+.rrssHc .redesSocialesPie {
+  margin-left: 20px; }
+
+.footerHc .copyFooter {
+  background-color: #e98666c7;
+  padding: 15px 10px;
+  text-align: center; }
+
+.footerHc .copyFooter .copyRight {
+  font-size: 20px; }
+
+.redesSocialesPie {
+  justify-items: center;
+  justify-content: center; }
+
+@media only screen and (max-width: 949px) {
+  .footerHc {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "caja3" "caja2";
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px; }
+  .caja1 {
+    display: none; }
+  .caja2 {
+    grid-area: "caja2"; }
+  .caja3 {
+    grid-area: "caja3"; }
+  .footerHc .contenidoFooter {
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 30px 0; }
+  .rrssHc {
+    margin-left: 100px; }
+  .footerHc .copyFooter .copyRight {
+    background-color: #d9653e21; } }
+
+body {
+  background-image: url(../media/img/fondo-hungry.png); }
+
+.contenedor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center; }
+  .contenedor .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #E9BC00; }
+    .contenedor .content .contenedor_login {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      justify-content: center; }
+      .contenedor .content .contenedor_login .indiceLogin {
+        font-weight: bold;
+        font-family: "Teko", sans-serif;
+        letter-spacing: 4.5px;
+        color: #342222;
+        margin-bottom: 1em;
+        margin-top: 50px;
+        text-align: center; }
+      .contenedor .content .contenedor_login .contenedor_login_titulo {
+        margin-bottom: 2em;
+        text-align: center; }
+        .contenedor .content .contenedor_login .contenedor_login_titulo .contenedor_login_titulo_frase {
+          font-family: "Teko", sans-serif;
+          font-style: italic;
+          color: #D9643E; }
+      .contenedor .content .contenedor_login .contenedor_login_form {
+        margin-bottom: 2em; }
+        .contenedor .content .contenedor_login .contenedor_login_form .contenedor_input {
+          position: relative; }
+          .contenedor .content .contenedor_login .contenedor_login_form .contenedor_input .input {
+            width: 100%;
+            height: 60px;
+            outline: none;
+            border: 2px solid #342222; }
+
+.nosotrosHc {
+  max-width: 700px;
+  width: 50%;
+  padding: 45px 20px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-family: "Teko", sans-serif;
+  color: #342222;
+  text-align: center; }
+  .nosotrosHc .tituloN {
+    font-size: 5em;
+    letter-spacing: 10px; }
+  .nosotrosHc .subtN {
+    font-size: 2em;
+    font-style: oblique; }
+  .nosotrosHc .parrafoN {
+    font-size: 35px;
+    padding: 50px;
+    background-color: #efe0a050; }
+    .nosotrosHc .parrafoN .linkIg {
+      font-weight: bold;
+      color: #D9643E;
+      text-decoration: none; }
+  .nosotrosHc .imagenesNosotros {
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-areas: 'cartaTomi'   'cartaNacho';
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 25px; }
+    .nosotrosHc .imagenesNosotros .cartaTomi {
+      grid-area: cartaTomi; }
+    .nosotrosHc .imagenesNosotros .cartaNacho {
+      grid-area: cartaNacho; }
+    .nosotrosHc .imagenesNosotros .cartasNosotros {
+      background-color: #efe0a050;
+      border-radius: 25px 0 0 30px;
+      text-align: center;
+      border: none; }
+      .nosotrosHc .imagenesNosotros .cartasNosotros .card-text {
+        font-size: 20px; }
+
+@media screen and (max-width: 759px) {
+  .nosotrosHc {
+    width: 100%; }
+  .imagenesNosotros {
+    grid-template-columns: repeat 1, 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "cartaTomi" "cartaNacho"; }
+    .imagenesNosotros .cartaTomi {
+      grid-area: "cartaTomi"; }
+    .imagenesNosotros .cartaNacho {
+      grid-area: "cartaNacho"; }
+  .card-text {
+    font-weight: bold;
+    font-size: 50px; } }
+
+@media screen and (min-width: 768px) {
+  .nosotrosHc {
+    width: 90%; } }
+
+@media screen and (min-width: 320px) {
+  .nosotrosHc .tituloN {
+    font-size: 50px; }
+  .nosotrosHc .subtN {
+    font-size: 30px;
+    font-style: oblique; } }
+
+/*  ESTILO REGISTRO */
+.registroPage {
+  max-width: 700px;
+  width: 100%;
+  padding: 45px 20px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-family: "Teko", sans-serif;
+  color: #342222;
+  text-align: center; }
+  .registroPage .tituloR {
+    font-size: 5em;
+    letter-spacing: 10px; }
+  .registroPage .subtR {
+    font-size: 2em;
+    font-style: oblique; }
+
+.formularioRegistro {
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  background-color: rgba(217, 100, 62, 0.3);
+  border-radius: 10px;
+  border: coral;
+  border-style: double; }
+
+.encabezadoRegistro {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px; }
+  .encabezadoRegistro .txtEncabezadoRegistro {
+    text-align: center;
+    font-size: 2rem;
+    color: #EFE0A0; }
+  .encabezadoRegistro .contenedorRegistro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px; }
+    .encabezadoRegistro .contenedorRegistro .inputRegistro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 20px;
+      border: 1px solid;
+      border-color: #342222; }
+  .encabezadoRegistro .input50 {
+    width: 50%; }
+  .encabezadoRegistro .input100 {
+    width: 100%; }
+  .encabezadoRegistro .preguntaSesion {
+    width: 100%;
+    margin: 0px;
+    padding-top: 20px;
+    text-align: center; }
+  .encabezadoRegistro .botonRegistro {
+    margin: auto;
+    padding: 10px 50px; }
+  .encabezadoRegistro .isRegistro {
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    color: #342222; }
+
+@media screen and (min-width: 320px) {
+  .registroPage .tituloR {
+    font-size: 50px; }
+  .registroPage .subtR {
+    font-size: 30px;
+    font-style: oblique; } }
+
+.contactatePage .txtEncabezadoRegistro {
+  padding: 10px 20px 10px 20px;
+  text-align: center; }
+
+.contenedorGridsRecetas {
+  background-color: #efe0a059;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "img1 img2" "img4 img5";
+  grid-gap: 10px; }
+
+.cajaImgReceta1 {
+  border-bottom: solid 2px;
+  border-color: #342222;
+  margin-right: 10px; }
+
+@media only screen and (max-width: 759px) {
+  .contenedorGridsRecetas {
+    grid-template-areas: "img1" "img2" "img4" "img5";
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center; }
+  .cajaImgReceta1 {
+    border-bottom: solid 2px;
+    border-color: #342222;
+    margin-right: 10px; }
+  .cajaImgReceta2 {
+    border-bottom: solid 2px;
+    border-color: #342222;
+    margin-right: 10px; }
+  .img1 {
+    grid-area: "img1"; }
+  .img2 {
+    grid-area: "img2"; }
+  .img3 {
+    grid-area: "img4"; }
+  .img4 {
+    grid-area: "img5"; } }
+
+.contactoPage {
+  max-width: 700px;
+  width: 100%;
+  padding: 45px 20px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-family: "Teko", sans-serif;
+  color: #342222;
+  text-align: center; }
+  .contactoPage .tituloC {
+    font-size: 5em;
+    letter-spacing: 10px; }
+  .contactoPage .subtC {
+    font-size: 2em;
+    font-style: oblique; }
+  .contactoPage .contactatePage {
+    width: 100%;
+    background: rgba(217, 100, 62, 0.3);
+    padding: 20px 60px 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+    .contactoPage .contactatePage .encabezadoContacto {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px; }
+      .contactoPage .contactatePage .encabezadoContacto .txtEncabezadoContacto {
+        text-align: center;
+        font-size: 2rem;
+        color: #EFE0A0; }
+    .contactoPage .contactatePage .linkContacto {
+      text-decoration: none;
+      color: #342222;
+      font-size: 4rem; }
+    .contactoPage .contactatePage .linkContacto:hover {
+      color: #D9643E;
+      transition: 0.3s; }
+    .contactoPage .contactatePage .pContactanos {
+      text-align: center;
+      font-size: 2rem;
+      font-style: oblique; }
+    .contactoPage .contactatePage .contenidoContact {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px; }
+      .contactoPage .contactatePage .contenidoContact .costadoIzqContactate {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .contactoPage .contactatePage .contenidoContact .costadoDerContactate {
+        width: 75%;
+        height: 100%;
+        margin-left: 90px; }
+        .contactoPage .contactatePage .contenidoContact .costadoDerContactate .contactForm {
+          margin-top: 50px; }
+        .contactoPage .contactatePage .contenidoContact .costadoDerContactate .textInputC {
+          padding-left: 10px;
+          padding-top: 10px;
+          color: #342222;
+          resize: none;
+          max-height: 100%;
+          font-size: 1rem;
+          width: 100%; }
+
+.botonContacto {
+  background-color: #BBB3A8;
+  font-family: 'Teko', sans-serif;
+  font-style: oblique;
+  font-size: 20px;
+  letter-spacing: 10px;
+  border: none;
+  margin-bottom: 40px; }
+
+.botonContacto:hover {
+  cursor: pointer;
+  background-color: #E9BC00;
+  transition: 0.5s;
+  color: black; }
+
+@media screen and (max-width: 820px) {
+  .contactatePage {
+    text-align: center; }
+    .contactatePage .contenidoContact {
+      flex-direction: column-reverse;
+      align-items: center; }
+    .contactatePage .costadoDerContactate {
+      align-items: center;
+      margin-right: 60px; } }
+
+@media screen and (min-width: 320px) {
+  .contactoPage .tituloC {
+    font-size: 50px; }
+  .contactoPage .subtC {
+    font-size: 30px;
+    font-style: oblique; }
+  .contactoPage .contactatePage .encabezadoContacto {
+    padding: 10px 20px 10px 20px;
+    text-align: center; }
+  .contactoPage .contactatePage .costadoDerContactate {
+    align-items: center;
+    margin-right: 90px; }
+    .contactoPage .contactatePage .costadoDerContactate input {
+      width: 100%; } }

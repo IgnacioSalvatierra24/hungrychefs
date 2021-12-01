@@ -1,0 +1,133 @@
+/* ESTILO FOOTER */
+
+.footerHc {
+    width: 100%;    
+    background-color: #d9653ec7 ;
+    border-top: solid 2.5px;
+    border-color: #342222e5 ;
+    font-family: $fontPrincipal;
+}
+
+.footerHc .contenidoFooter {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.footerHc .contenidoFooter .cajasFooter .logoFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hashtagPagina {
+    text-align: center;
+}
+.footerHc .contenidoFooter .cajasFooter .logoFooter .logoHcF {
+    width: 200px;
+}
+
+.footerHc .contenidoFooter .cajasFooter .hashtagPagina {
+    color: #342222e5 ;
+    font-style: italic;
+    margin-top: 100px;   
+    font-size: 30px; 
+}
+
+
+.rrssHc {
+    margin-top: 100px;
+}
+
+
+.footerHc .contenidoFooter .cajasFooter .logoRedes .redesSocIcon {
+    display: inline-block;
+    text-decoration: none;    
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffff ;
+    background-color: #efe0a070 ;
+    text-align: center;  
+
+}
+
+.footerHc .contenidoFooter .cajasFooter .logoRedes .redesSocIcon:hover {
+    transition: 0.5s;
+    background-color: #E9BC00 ;
+    color: #342222;
+}
+
+.rrssHc .redesSocialesPie {
+    margin-left: 20px;
+    
+}
+
+.footerHc .copyFooter {
+    background-color: #e98666c7 ;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.footerHc .copyFooter .copyRight {
+    font-size: 20px;
+}
+
+.redesSocialesPie {
+    justify-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:949px) {
+
+
+    .footerHc {
+       
+        width: 100%;
+        display: grid;   
+        justify-content: center;
+        grid-template-areas: 
+        "caja3"
+        "caja2"              
+        ;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px; 
+        
+    }
+
+    .caja1 {
+        display: none;
+    }
+    .caja2 {
+        grid-area: "caja2";
+    }
+    .caja3 {
+        grid-area: "caja3";
+    }
+
+    .footerHc .contenidoFooter {
+        width: 100%;
+        margin: auto ;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 30px 0;
+    }
+
+    .rrssHc {
+        margin-left: 100px;
+        
+    }
+
+    .footerHc .copyFooter .copyRight {
+        background-color: #d9653e21 ;
+    }
+
+}
+
+ 
+   
+

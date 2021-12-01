@@ -1,0 +1,50 @@
+/* ESTILO HEADER */
+
+body {
+  font-family: $fontPrincipal;
+
+}
+
+.navBarHungry {
+    border-bottom: solid 2.5px;
+    border-color: #342222e5 ;
+    background-color: #d9653ec7 ;
+   
+}
+
+.ulMenuHungry {
+    justify-content: center;
+}
+
+.opcNav {
+    font-size: 25px;
+    font-weight: bold;
+    color: #342222 ;
+    
+}
+
+.logoHungryChefs {
+    width: 200px;
+    height: 200px;
+    transition: ease-in 2s;
+}
+
+
+.navBarHungry .menuResponsive:hover {
+    /* background-color:; */
+    padding: 10px;
+    color: #EFE0A0 ;
+    transition: 0.4s;
+    border-radius: 0 0 10px;  
+    cursor: pointer;
+}
+
+
+.navBarHungry .ulMenuHungry .opcNav:hover {
+    
+    padding: 10px;
+    color: #EFE0A0 ;
+    transition: 0.4s;
+    font-style: oblique;
+    border-radius: 0 0 10px;
+}

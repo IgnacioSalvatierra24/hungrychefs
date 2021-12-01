@@ -1,0 +1,164 @@
+// PAGES CONTACTOS // 
+
+.contactoPage {
+    max-width: 700px;
+    width: 100%;
+    padding: 45px 20px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-family: $fontPrincipal ;
+    color: $colorTexto;
+    text-align: center;
+    .tituloC {
+        font-size: 5em;  
+        letter-spacing: 10px;
+    }
+    .subtC {
+        font-size: 2em;
+        font-style: oblique;
+    }
+           
+    .contactatePage {
+        width: 100%;
+        background: rgba(217, 100, 62, 0.3);
+        padding: 20px 60px 40px 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
+        .encabezadoContacto {
+            width: 100%;
+            
+            border-radius: 10px;
+            margin-top: 10px;
+            .txtEncabezadoContacto {
+                text-align: center;
+                font-size: 2rem;   
+                color: $colorClaro2 ;           
+            }          
+        }            
+        .linkContacto {
+            text-decoration: none;
+            color: $colorTexto ;
+            font-size: 4rem;            
+        }
+        .linkContacto:hover {
+            color: $colorPrimero;
+            transition: 0.3s;            
+        }
+        .pContactanos {
+            text-align: center;
+            font-size: 2rem;
+            font-style: oblique;
+        }    
+        .contenidoContact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+                
+            .costadoIzqContactate {
+                width: 25%;
+                height: 100%; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;    
+                align-items: center;           
+            }
+            .costadoDerContactate {
+                width: 75%;
+                height: 100%;     
+                margin-left: 90px ;
+                .contactForm {
+                    margin-top: 50px;
+                }   
+                
+                .textInputC {
+                    padding-left: 10px;
+                    padding-top: 10px;                    
+                    color: $colorTexto;
+                    resize: none;
+                    max-height: 100%;  
+                    font-size: 1rem;
+                    width: 100%;
+                              
+                }             
+                                    
+            }
+
+        }
+        
+
+    }    
+}
+
+
+.botonContacto {
+    background-color: #BBB3A8; 
+    font-family: 'Teko', sans-serif;
+    font-style: oblique;
+    font-size: 20px;
+    letter-spacing: 10px;
+    border: none;
+    margin-bottom: 40px;
+}
+.botonContacto:hover {
+    cursor: pointer;
+    background-color: #E9BC00 ;
+    transition: 0.5s;
+    color: black;
+    
+}
+
+@media screen and (max-width: 820px) {
+    .contactatePage {
+        text-align: center;
+    
+    .contenidoContact {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .costadoDerContactate {
+        align-items: center;
+        margin-right: 60px;
+    }
+
+ }
+}
+
+
+@media screen and (min-width: 320px) {
+    .contactoPage {
+        
+        .tituloC {
+            font-size: 50px;  
+            
+        }
+        .subtC {
+            font-size: 30px;
+            font-style: oblique;}  
+        
+        .contactatePage {
+
+            .encabezadoContacto {
+              
+              padding: 10px 20px 10px 20px;
+              text-align: center;
+            }
+            .costadoDerContactate {
+                align-items: center;
+                margin-right: 90px;
+                input {
+                    width: 100%;                    
+                }
+                          
+            }
+
+        }
+
+    }
+
+    
+    
+
+   
+}

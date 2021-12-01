@@ -1,0 +1,119 @@
+/*  ESTILO REGISTRO */
+
+.registroPage {
+    max-width: 700px;
+    width: 100%;
+    padding: 45px 20px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-family: $fontPrincipal ;
+    color: $colorTexto;
+    text-align: center;
+    .tituloR {
+        font-size: 5em;  
+        letter-spacing: 10px;
+    }
+    .subtR {
+        font-size: 2em;
+        font-style: oblique;
+    }
+}
+
+
+.formularioRegistro {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(217, 100, 62, 0.3); 
+    border-radius: 10px;    
+    border: coral;
+    border-style: double;    
+    
+}
+
+.encabezadoRegistro {
+    width: 100%;
+    
+    border-radius: 10px;
+    margin-top: 10px;
+    .txtEncabezadoRegistro {
+        text-align: center;
+        font-size: 2rem;   
+        color: $colorClaro2 ;           
+    }          
+
+.contenedorRegistro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    .inputRegistro {
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center; 
+        margin-bottom: 15px;   
+        padding: 20px;
+        border: 1px solid ;
+        border-color: #342222;
+    }
+
+}
+
+
+
+
+.input50 {
+    width: 50%;
+   
+}
+
+.input100 {
+    width: 100%;
+}
+
+.preguntaSesion {
+    width: 100%;
+    margin: 0px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.botonRegistro {
+    margin: auto;
+    padding: 10px 50px;
+}
+
+.isRegistro {
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    color: #342222; 
+    }   
+}
+
+@media screen and (min-width: 320px) {
+    .registroPage {
+        
+        .tituloR {
+            font-size: 50px;  
+            
+        }
+        .subtR {
+            font-size: 30px;
+            font-style: oblique;}  
+        }
+    }
+        
+        .contactatePage {
+
+            .txtEncabezadoRegistro {
+              
+              padding: 10px 20px 10px 20px;
+              text-align: center;
+            
+            }
+       
+}

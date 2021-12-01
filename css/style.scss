@@ -1,0 +1,97 @@
+@import 'variables.scss' ;
+@import url( "https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600;700&display=swap");
+@import 'globales.scss' ;
+
+
+
+@import 'header.scss' ;
+@import 'footer.scss' ;
+
+
+
+body {
+    background-image: url(../media/img/fondo-hungry.png);       
+}
+
+//INDEX//
+
+
+
+
+
+
+
+//LOGIN//
+
+.contenedor {   
+    width: 100% ;    
+    height: 100%;
+    display: flex;
+    text-align: center;        
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: $colorSegundo;  
+        .contenedor_login {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            justify-content: center;
+            .indiceLogin {
+                font-weight: bold;
+                font-family: $fontPrincipal;
+                letter-spacing: 4.5px;
+                color: $colorTexto;
+                margin-bottom: 1em;
+                margin-top: 50px;
+                text-align: center;
+            }
+            .contenedor_login_titulo {            
+                margin-bottom: $marginBottom ;
+                text-align: center;                
+                .contenedor_login_titulo_frase {
+                    font-family: $fontPrincipal;
+                    font-style: italic;
+                    color: $colorPrimero;                    
+                }
+            }
+            .contenedor_login_form {
+                margin-bottom: $marginBottom ;
+                .contenedor_input {
+                    position: relative;
+                    .input {
+                        width: 100%;
+                        height: 60px;
+                        outline: none;
+                        border: 2px solid $colorTexto;
+                        
+                    }
+                }
+
+            }
+            
+        }     
+    }
+
+        
+
+}
+
+
+@import 'nosotros.scss' ;
+
+
+
+@import 'registro.scss' ;
+
+@import 'recetas.scss' ;
+
+@import 'contactate.scss' ;
+
+@import 'iniciasesion.scss'
