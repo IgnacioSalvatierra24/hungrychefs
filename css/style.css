@@ -329,8 +329,23 @@ body {
   padding: 10px 20px 10px 20px;
   text-align: center; }
 
+.recetasMain {
+  max-width: 700px;
+  width: 100%;
+  padding: 45px 20px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-family: "Teko", sans-serif;
+  color: #342222;
+  text-align: center; }
+  .recetasMain .tituloR {
+    font-size: 5em;
+    letter-spacing: 10px; }
+  .recetasMain .subtR {
+    font-size: 2em;
+    font-style: oblique; }
+
 .contenedorGridsRecetas {
-  background-color: #efe0a059;
   width: 100%;
   display: grid;
   justify-content: center;
@@ -363,6 +378,44 @@ body {
     grid-area: "img4"; }
   .img4 {
     grid-area: "img5"; } }
+
+@media only screen and (min-width: 320px) {
+  .contenedorGridsRecetas {
+    margin-left: 5px; } }
+
+.recetasMain .tituloR {
+  font-size: 50px; }
+
+.recetasMain .subtR {
+  font-size: 30px;
+  font-style: oblique; }
+
+.tituloImgR {
+  background-color: #E9BC00;
+  bottom: 0;
+  top: 0;
+  color: #342222;
+  left: 0;
+  opacity: 0.1;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  padding-top: 200px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2em; }
+
+.tituloImgR:hover {
+  opacity: 0.4;
+  transition: 0.8s; }
+
+.recetasImg {
+  float: left;
+  position: relative;
+  margin-bottom: 20px; }
+
+.vinculoRecetas {
+  cursor: pointer; }
 
 .contactoPage {
   max-width: 700px;

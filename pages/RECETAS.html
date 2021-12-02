@@ -11,7 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" href="../media/img/hc_1.png">
     <meta name="description" 
     content="Elegí la receta que quieras preparar y mirá cómo hacerla de la forma más fácil">
@@ -63,22 +63,31 @@
     <!-- CUERPO PÁGINA -->
   
         <main class="recetasMain">
-            <h1> ELEGÍ QUE RECETA HACER HOY! </h1>
-            <div class="contenedorGridsRecetas">
-                <div class="cajaImgReceta1" #cajaImgReceta2>
-                    <img src="../media/img/Logo sin fondo-10.png" alt="imagenRecetasSaladas" width="300px"  class="img1" >
+            
+            <h2 class="tituloR"> RECETAS! </h2>
+
+            <h3 class="subtR"> Ya tenés pensado que vas a cocinar ?... </h3>
+
+            <div class="contenedorGridsRecetas">               
+                <div class="recetasImg cajaImgReceta1 " #cajaImgReceta2>
+                   <a  href="https://www.instagram.com/hungrychefs_/"> <img src="../media/img/Logo sin fondo-10.png" alt="imagenRecetasSaladas" width="300px"  class="img1" > </a>
+                    <div class="tituloImgR">SALADAS</div>
                 </div>
-                <div class="cajaImgReceta1" >
-                    <img src="../media/img/Logo sin fondo-11.png" alt="imagenRecetasDulces"  width="300px" class="img2" >
-                </div  >
-                <div class="cajaImgReceta2" #cajaImgReceta2>
-                    <img src="../media/img/Logo sin fondo-13.png" alt="imagenRecetasPanificados" width="300px" class="img4" >
-                </div>
-                <div class="cajaImgReceta2" >
-                    <img src="../media/img/Logo sin fondo-14.png" alt="imagenRecetasTragos" width="300px" class="img5" >
-                </div>
+                <div class="recetasImg cajaImgReceta1 " #cajaImgReceta2>
+                    <a  href="https://www.youtube.com/channel/UCyTqos_zv38--WH6NBeKtgQ"> <img src="../media/img/Logo sin fondo-11.png" alt="imagenRecetasDulce" width="300px"  class="img2" > </a>
+                     <div class="tituloImgR">DULCES</div>
+                 </div>
+                 <div class="recetasImg cajaImgReceta1 " #cajaImgReceta2>
+                    <a href="https://www.instagram.com/hungrychefs_/"> <img src="../media/img/Logo sin fondo-13.png" alt="imagenRecetasSaladas" width="300px"  class="img4" > </a>
+                     <div class="tituloImgR">PANIFICADOS</div>
+                 </div>
+                 <div class="recetasImg cajaImgReceta1 " #cajaImgReceta2>
+                    <a class="vinculoRecetas" target="_blank" href="https://www.instagram.com/hungrychefs_/"><img src="../media/img/Logo sin fondo-14.png" alt="imagenRecetasSaladas" width="300px"  class="img5" > </a>
+                     <div class="tituloImgR">TRAGOS</div></a>
+                 </div>                
             </div>
         </main>
+
     
 
     <!-- FOOTER -->

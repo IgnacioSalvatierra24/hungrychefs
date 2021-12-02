@@ -1,5 +1,23 @@
+.recetasMain {
+    max-width: 700px;
+    width: 100%;
+    padding: 45px 20px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-family: $fontPrincipal ;
+    color: $colorTexto;
+    text-align: center;
+    .tituloR {
+        font-size: 5em;  
+        letter-spacing: 10px;
+    }
+    .subtR {
+        font-size: 2em;
+        font-style: oblique;
+    }
+}
+
 .contenedorGridsRecetas {
-    background-color:#efe0a059;
     width: 100%;
     display: grid;   
     justify-content: center;
@@ -51,4 +69,54 @@
     .img4 {
         grid-area: "img5";
     }
+}
+
+@media  only screen and (min-width: 320px) {
+    .contenedorGridsRecetas {
+    margin-left: 5px;
+    }
+}
+    .recetasMain {
+        .tituloR {
+            font-size: 50px;  
+            
+        }
+        .subtR {
+            font-size: 30px;
+            font-style: oblique;} 
+        
+    }
+
+
+.tituloImgR {
+    background-color: $colorSegundo;
+    bottom: 0;
+    top: 0;
+    color: $colorTexto;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+    padding:10px;
+    padding-top: 200px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;  
+}
+
+.tituloImgR:hover {
+    opacity: 0.4;
+    transition: 0.8s;
+}
+
+.recetasImg {
+    float:left;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.vinculoRecetas {
+    cursor: pointer;
+    
 }
