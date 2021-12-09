@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600;700&display=swap");
 * {
   margin: 0;
@@ -165,14 +166,14 @@ body {
         margin-top: 50px;
         text-align: center; }
       .contenedor .content .contenedor_login .contenedor_login_titulo {
-        margin-bottom: 2em;
+        margin-bottom: 3em;
         text-align: center; }
         .contenedor .content .contenedor_login .contenedor_login_titulo .contenedor_login_titulo_frase {
           font-family: "Teko", sans-serif;
           font-style: italic;
           color: #D9643E; }
       .contenedor .content .contenedor_login .contenedor_login_form {
-        margin-bottom: 2em; }
+        margin-bottom: 3em; }
         .contenedor .content .contenedor_login .contenedor_login_form .contenedor_input {
           position: relative; }
           .contenedor .content .contenedor_login .contenedor_login_form .contenedor_input .input {
@@ -445,7 +446,7 @@ body {
       .contactoPage .contactatePage .encabezadoContacto .txtEncabezadoContacto {
         text-align: center;
         font-size: 2rem;
-        color: #EFE0A0; }
+        color: #D9643E; }
     .contactoPage .contactatePage .linkContacto {
       text-decoration: none;
       color: #342222;
@@ -523,3 +524,216 @@ body {
     margin-right: 90px; }
     .contactoPage .contactatePage .costadoDerContactate input {
       width: 100%; } }
+
+.loginPage {
+  text-align: center; }
+  .loginPage .tituloLogin {
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 5em;
+    letter-spacing: 10px; }
+  .loginPage .subtLogin {
+    font-size: 2em;
+    font-style: oblique; }
+
+.contenedorLogin {
+  max-width: 440px;
+  padding: 0 20px;
+  margin: auto;
+  margin-bottom: 3em;
+  overflow: hidden; }
+
+.formLogin {
+  width: 100%;
+  background: rgba(217, 100, 62, 0.3);
+  padding: 20px 60px 40px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  justify-items: center; }
+
+.formLogin .tituloFormLogin {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #D9643E;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.formLogin .formularioL {
+  padding: 30px 25px 25px 25px;
+  margin-left: 20px; }
+
+.formLogin .formularioL .inputsLogin {
+  height: 60px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative; }
+
+.formLogin .formularioL .inputsLogin .inputL {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 2px solid #F4EEE2;
+  font-size: 1.2em;
+  transition: all 0.5s ease; }
+
+.formularioL .inputsLogin .inputL:focus {
+  border-color: #D9643E; }
+
+.formLogin .formularioL .olvidaContraseña {
+  margin: 8px 0 20px 0;
+  text-decoration: none;
+  color: #342222;
+  font-size: 1.5em; }
+
+.formLogin .formularioL .olvidaContraseña:hover {
+  text-decoration: underline; }
+
+.formLogin .formularioL .botonEntrar .inputL {
+  background-color: #BBB3A8;
+  font-style: oblique;
+  font-size: 20px;
+  letter-spacing: 10px;
+  border: none;
+  margin-bottom: 40px; }
+
+.formularioL .botonEntrar .inputL:hover {
+  cursor: pointer;
+  background-color: #E9BC00;
+  transition: 0.5s;
+  color: black; }
+
+.formLogin .formularioL .textoRegistrate {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-style: italic; }
+
+.formLogin .formularioL .textoRegistrate .regLogin {
+  color: #D9643E;
+  text-decoration: none;
+  font-weight: bold; }
+
+.formularioL .textoRegistrate .regLogin:hover {
+  text-decoration: underline; }
+
+@media screen and (max-width: 410px) {
+  .loginPage .tituloLogin {
+    font-size: 50px; }
+  .loginPage .subtLogin {
+    font-size: 30px;
+    font-style: oblique; } }
+
+@media screen and (max-width: 320px) {
+  .loginPage {
+    width: 100%; }
+    .loginPage .tituloLogin {
+      font-size: 30px; }
+    .loginPage .subtLogin {
+      font-size: 20px;
+      font-style: oblique; }
+  .formLogin .formularioL {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    width: 100%; }
+  .formLogin .formularioL .textoRegistrate {
+    font-size: 0.9em;
+    font-style: italic; }
+  .formLogin .formularioL .olvidaContraseña {
+    font-size: 1em; } }
+
+.presentacionIndex {
+  width: 100%;
+  align-items: center;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacionIndex .textoIndex {
+    max-width: 700px; }
+    .presentacionIndex .textoIndex .tituloI {
+      font-size: 5em;
+      letter-spacing: 10px;
+      color: #342222; }
+    .presentacionIndex .textoIndex .textoIndexPage {
+      font-size: 2em; }
+      .presentacionIndex .textoIndex .textoIndexPage .linkIndex {
+        font-weight: bold;
+        color: #D9643E;
+        text-decoration: none; }
+    .presentacionIndex .textoIndex .botonIndex {
+      display: inline-block;
+      text-decoration: none;
+      color: #EFE0A0;
+      font-size: 2em;
+      background-color: #D9643E;
+      padding: 8px 20px;
+      margin-top: 20px; }
+    .presentacionIndex .textoIndex .botonIndex:hover {
+      background: #E9BC00;
+      color: #342222;
+      transition: 0.4s;
+      font-size: 2.2em; }
+
+.videoYt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 20px; }
+  .videoYt .iframe1, .videoYt .iframe2 {
+    width: 560px;
+    height: 315px; }
+
+.banner {
+  margin-bottom: 20px;
+  opacity: 90%; }
+
+.card-group {
+  margin: 20px 40px 30px;
+  gap: 60px; }
+  .card-group .card-body {
+    background-color: #D9643E;
+    opacity: 80%; }
+    .card-group .card-body .textoCartaIndex {
+      font-size: 60px;
+      text-align: center;
+      color: #342222; }
+
+@media screen and (max-width: 1260px) {
+  .videoYt {
+    gap: 25px; }
+    .videoYt .iframe1 {
+      width: 470px;
+      height: 220px; }
+    .videoYt .iframe2 {
+      width: 470px;
+      height: 220px; } }
+
+@media screen and (max-width: 980px) {
+  .videoYt {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .card-group .card-body .textoCartaIndex {
+    font-size: 20px;
+    font-weight: bold; } }
+
+@media screen and (max-width: 650px) {
+  .presentacionIndex .textoIndex .tituloI {
+    font-size: 40px; }
+  .videoYt {
+    gap: 25px; }
+    .videoYt .iframe1 {
+      width: 275px;
+      height: 210px; }
+    .videoYt .iframe2 {
+      width: 275px;
+      height: 210px; }
+    .videoYt .banner {
+      height: 700px; }
+  .card-group .card-body .textoCartaIndex {
+    font-size: 20px; } }

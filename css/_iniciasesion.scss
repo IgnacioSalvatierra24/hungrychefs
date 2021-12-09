@@ -1,0 +1,150 @@
+
+.loginPage {
+    text-align: center;
+    .tituloLogin {
+        margin: 0 auto;
+        margin-top: 3rem;
+        font-size: 5em;  
+        letter-spacing: 10px;
+    }
+    .subtLogin {
+        font-size: 2em;
+        font-style: oblique;
+    }
+
+}
+
+
+.contenedorLogin{
+  max-width: 440px;
+  padding: 0 20px;
+  margin: auto;
+  margin-bottom: $marginBottom;
+  overflow: hidden;
+  
+}
+.formLogin{
+    width: 100%;
+    background: rgba(217, 100, 62, 0.3);
+    padding: 20px 60px 40px 40px;    
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
+    justify-items: center;
+}
+.formLogin .tituloFormLogin{
+  margin-top: 10px;
+  font-size: 2rem;   
+  color: $colorPrimero ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formLogin .formularioL{
+  padding: 30px 25px 25px 25px;
+  margin-left: 20px;  
+}
+.formLogin .formularioL .inputsLogin{
+  height: 60px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+.formLogin .formularioL .inputsLogin .inputL{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 2px solid $colorClaro ;
+  font-size: 1.2em;
+  transition: all 0.5s ease;
+}
+.formularioL .inputsLogin .inputL:focus{
+  border-color: $colorPrimero;
+  
+}
+
+.formLogin .formularioL .olvidaContraseña{
+  margin: 8px 0 20px 0;
+  text-decoration: none;
+  color: $colorTexto;
+  font-size: 1.5em;
+}
+.formLogin .formularioL .olvidaContraseña:hover{
+    text-decoration: underline;
+  }
+
+.formLogin .formularioL .botonEntrar .inputL{
+    background-color: #BBB3A8;     
+    font-style: oblique;
+    font-size: 20px;
+    letter-spacing: 10px;
+    border: none;
+    margin-bottom: 40px;
+}
+.formularioL .botonEntrar .inputL:hover{
+    cursor: pointer;
+    background-color: #E9BC00 ;
+    transition: 0.5s;
+    color: black;
+}
+.formLogin .formularioL .textoRegistrate{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.formLogin .formularioL .textoRegistrate .regLogin{
+  color: $colorPrimero;
+  text-decoration: none;
+  font-weight: bold;
+}
+.formularioL .textoRegistrate .regLogin:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 410px) {
+    .loginPage{
+
+        .tituloLogin {
+            font-size: 50px;  
+            
+        }
+        .subtLogin {
+            font-size: 30px;
+            font-style: oblique;} 
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .loginPage{
+            width: 100%;
+            .tituloLogin {
+                font-size: 30px;  
+                
+                
+            }
+            .subtLogin {
+                font-size: 20px;
+                font-style: oblique;} 
+            }
+        .formLogin .formularioL{
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-left: 10px; 
+                width: 100%; }
+        .formLogin .formularioL .textoRegistrate{                
+                    font-size: 0.9em;
+                    font-style: italic;
+                  }      
+        .formLogin .formularioL .olvidaContraseña{
+            font-size: 1em; }
+          
+
+
+           
+           
+}
+
+
+   
