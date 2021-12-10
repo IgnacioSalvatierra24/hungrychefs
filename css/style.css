@@ -735,10 +735,6 @@ body {
     width: 560px;
     height: 315px; }
 
-.banner {
-  margin-bottom: 20px;
-  opacity: 90%; }
-
 .card-group {
   margin: 20px 40px 30px;
   gap: 60px; }
