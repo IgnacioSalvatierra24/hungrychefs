@@ -8,7 +8,7 @@
     margin-top: 3rem;
     font-family: $fontPrincipal ;
     color: $colorTexto;
-    text-align: center;
+    text-align: center;   
     .tituloR {
         font-size: 5em;  
         letter-spacing: 10px;
@@ -17,103 +17,133 @@
         font-size: 2em;
         font-style: oblique;
     }
+}     
+
+.contenedorFormularioR{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;  
+  margin-bottom: $marginBottom;
 }
-
-
-.formularioRegistro {
-    width: 95%;
-    max-width: 500px;
-    margin: auto;
-    background-color: rgba(217, 100, 62, 0.3); 
-    border-radius: 10px;    
-    border: coral;
-    border-style: double;    
-    
-}
-
-.encabezadoRegistro {
-    width: 100%;
-    
+.formularioRegistro{
+    width: 80%;
+    background: rgba(217, 100, 62, 0.3);
+    padding: 20px 60px 40px 40px;
     border-radius: 10px;
-    margin-top: 10px;
-    .txtEncabezadoRegistro {
-        text-align: center;
-        font-size: 2rem;   
-        color: $colorClaro2 ;           
-    }          
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
+}
+.formularioRegistro .tituloFormReg{
+  margin-top: 10px;
+  font-size: 2rem;   
+  color: $colorPrimero ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-.contenedorRegistro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-    .inputRegistro {
-        
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;    
-        align-items: center; 
-        margin-bottom: 15px;   
-        padding: 20px;
-        border: 1px solid ;
-        border-color: #342222;
-    }
-
+.contenedorRegistro .formRegistro .datosUsuarioRegistro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.formRegistro .datosUsuarioRegistro .ingresoDatosR{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
 }
 
 
-
-
-.input50 {
-    width: 50%;
-   
+.formRegistro .ingresoDatosR .datosUser{
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  color: $colorTexto;  
 }
 
-.input100 {
+.datosUsuarioRegistro .ingresoDatosR .inputRegistro{
+    
     width: 100%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid $colorClaro ;
+    font-size: 1.2em;
+    transition: all 0.5s ease;
 }
+.datosUsuarioRegistro .ingresoDatosR .inputRegistro:focus {
+    border-color: $colorPrimero;
+} 
+ 
 
-.preguntaSesion {
-    width: 100%;
-    margin: 0px;
-    padding-top: 20px;
+.botonR {
     text-align: center;
 }
 
 .botonRegistro {
-    margin: auto;
-    padding: 10px 50px;
+    height: 45px;
+    margin: 35px 0 ;
+    background-color: #BBB3A8;     
+    font-style: oblique;
+    font-size: 20px;
+    letter-spacing: 10px;
+    border: none;
+    margin-bottom: 40px;   
+    
+ }
+ .botonRegistro:hover{
+    cursor: pointer;
+    background-color: #E9BC00 ;
+    transition: 0.5s;
+    color: black; }
+
+.selectorGeneroR {
+    align-items: center;
+    width: 100%;
+    
+}    
+
+.generoR {
+    border: none; 
+    font-size: 1.3em;  
+    background-color: $colorClaro2;
+    text-align: justify;
 }
 
-.isRegistro {
-    text-decoration: none;
-    font-family: 'Teko', sans-serif;
-    font-weight: bold;
-    color: #342222; 
-    }   
+
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+.formRegistro .datosUsuarioRegistro .ingresoDatosR{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .contenedorRegistro .formRegistro .datosUsuarioRegistro{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  }
+  @media(max-width: 459px){
+  .formularioRegistro .contenedorRegistro {
+    flex-direction: column;
+  }
 }
 
-@media screen and (min-width: 320px) {
-    .registroPage {
-        
+@media screen and (max-width: 420px) {
+    .registroPage{
+
         .tituloR {
             font-size: 50px;  
             
         }
         .subtR {
             font-size: 30px;
-            font-style: oblique;}  
+            font-style: oblique;} 
         }
     }
-        
-        .contactatePage {
-
-            .txtEncabezadoRegistro {
-              
-              padding: 10px 20px 10px 20px;
-              text-align: center;
-            
-            }
-       
-}

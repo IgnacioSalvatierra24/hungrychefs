@@ -269,66 +269,108 @@ body {
     font-size: 2em;
     font-style: oblique; }
 
+.contenedorFormularioR {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 3em; }
+
 .formularioRegistro {
-  width: 95%;
-  max-width: 500px;
-  margin: auto;
-  background-color: rgba(217, 100, 62, 0.3);
+  width: 80%;
+  background: rgba(217, 100, 62, 0.3);
+  padding: 20px 60px 40px 40px;
   border-radius: 10px;
-  border: coral;
-  border-style: double; }
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-.encabezadoRegistro {
+.formularioRegistro .tituloFormReg {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #D9643E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+
+.contenedorRegistro .formRegistro .datosUsuarioRegistro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0; }
+
+.formRegistro .datosUsuarioRegistro .ingresoDatosR {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px); }
+
+.formRegistro .ingresoDatosR .datosUser {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  color: #342222; }
+
+.datosUsuarioRegistro .ingresoDatosR .inputRegistro {
   width: 100%;
-  border-radius: 10px;
-  margin-top: 10px; }
-  .encabezadoRegistro .txtEncabezadoRegistro {
-    text-align: center;
-    font-size: 2rem;
-    color: #EFE0A0; }
-  .encabezadoRegistro .contenedorRegistro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px; }
-    .encabezadoRegistro .contenedorRegistro .inputRegistro {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 15px;
-      padding: 20px;
-      border: 1px solid;
-      border-color: #342222; }
-  .encabezadoRegistro .input50 {
-    width: 50%; }
-  .encabezadoRegistro .input100 {
-    width: 100%; }
-  .encabezadoRegistro .preguntaSesion {
-    width: 100%;
-    margin: 0px;
-    padding-top: 20px;
-    text-align: center; }
-  .encabezadoRegistro .botonRegistro {
-    margin: auto;
-    padding: 10px 50px; }
-  .encabezadoRegistro .isRegistro {
-    text-decoration: none;
-    font-family: 'Teko', sans-serif;
-    font-weight: bold;
-    color: #342222; }
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 2px solid #F4EEE2;
+  font-size: 1.2em;
+  transition: all 0.5s ease; }
 
-@media screen and (min-width: 320px) {
+.datosUsuarioRegistro .ingresoDatosR .inputRegistro:focus {
+  border-color: #D9643E; }
+
+.botonR {
+  text-align: center; }
+
+.botonRegistro {
+  height: 45px;
+  margin: 35px 0;
+  background-color: #BBB3A8;
+  font-style: oblique;
+  font-size: 20px;
+  letter-spacing: 10px;
+  border: none;
+  margin-bottom: 40px; }
+
+.botonRegistro:hover {
+  cursor: pointer;
+  background-color: #E9BC00;
+  transition: 0.5s;
+  color: black; }
+
+.selectorGeneroR {
+  align-items: center;
+  width: 100%; }
+
+.generoR {
+  border: none;
+  font-size: 1.3em;
+  background-color: #EFE0A0;
+  text-align: justify; }
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%; }
+  .formRegistro .datosUsuarioRegistro .ingresoDatosR {
+    margin-bottom: 15px;
+    width: 100%; }
+  .contenedorRegistro .formRegistro .datosUsuarioRegistro {
+    max-height: 300px;
+    overflow-y: scroll; } }
+
+@media (max-width: 459px) {
+  .formularioRegistro .contenedorRegistro {
+    flex-direction: column; } }
+
+@media screen and (max-width: 420px) {
   .registroPage .tituloR {
     font-size: 50px; }
   .registroPage .subtR {
     font-size: 30px;
     font-style: oblique; } }
-
-.contactatePage .txtEncabezadoRegistro {
-  padding: 10px 20px 10px 20px;
-  text-align: center; }
 
 .recetasMain {
   max-width: 700px;
@@ -499,6 +541,11 @@ body {
   background-color: #E9BC00;
   transition: 0.5s;
   color: black; }
+
+.botonConsultaSobre {
+  border: none;
+  font-size: 1.3em;
+  background-color: #EFE0A0; }
 
 @media screen and (max-width: 820px) {
   .contactatePage {

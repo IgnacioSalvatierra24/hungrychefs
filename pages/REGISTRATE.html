@@ -43,10 +43,10 @@
                             <a class="nav-link  opcNav" href="../pages/CONTACTATE.html">CONTACTO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link opcNav" href="../pages/REGISTRATE.html">REGISTRO</a>
+                            <a class="nav-link active opcNav" href="../pages/REGISTRATE.html">REGISTRO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active opcNav" href="../pages/INICIASESION.html">INGRESO</a>
+                            <a class="nav-link  opcNav" href="../pages/INICIASESION.html">INGRESO</a>
                         </li>
                     </ul>
                 </div>
@@ -56,29 +56,55 @@
     <!-- TERMINA HEADER -->
 
 
-<main class="registroPage">
+<main >
+    <div class="registroPage">
+        <h1 class="tituloR"> REGISTRATE! </h1>
 
-    <h1 class="tituloR"> REGISTRATE! </h1>
-
-    <h2 class="subtR"> Sumate a la comunidad! </h2>
-
-    
-    <div class="formularioRegistro">
-        <div class="encabezadoRegistro"> 
-            <p class="txtEncabezadoRegistro"> Ingresá tus datos y registrate </p>
-        </div> 
-        <div class="contenedorRegistro">
-            <input type="text"  name="NOMBRE" placeholder="NOMBRE" class="input50 inputRegistro" required  id="inputRegistro">
-            <input type="text"  name="APELLIDO" placeholder="APELLIDO" class="input50 inputRegistro" id="inputRegistro">
-            <input type="email"  name="CORREO" placeholder="CORREO ELECTRONICO" class="input100 inputRegistro" required id="inputRegistro">
-            <input type="text"  name="USUARIO" placeholder="NOMBRE DE USUARIO" class="input50 inputRegistro" required id="inputRegistro">
-            <input type="password"  name="CONSTRASEÑA" placeholder="CONTRASEÑA" class="input50 inputRegistro" required id="inputRegistro">
-            <input type="number"  name="TELEFONO" placeholder="TELEFONO" class="input100 inputRegistro"  required id="inputRegistro">
-            <input type="submit" name="REGISTRO"    value="REGISTRAR" id="botonEnviarContacto" class="botonRegistro">
-            <p  class="preguntaSesion"> ¿ESTÁS REGISTRADO? <a href="../pages/INICIO-DE-SESIÓN.html" class="isRegistro">INICIA SESIÓN</a></P>
-        </div>
+        <h2 class="subtR"> Sumate a la comunidad! </h2>
     </div>
 
+    <div class="contenedorFormularioR">
+    
+        <div class="formularioRegistro">
+            <div class="tituloFormReg"> INGRESA TUS DATOS</div>
+            <div class="contenedorRegistro">
+            <form class="formRegistro" action="#">
+                <div class="datosUsuarioRegistro">
+                <div class="ingresoDatosR">
+                    <span class="datosUser">Nombre</span>
+                    <input class="inputRegistro" type="text" placeholder="Tu nombre" required>
+                </div>
+                <div class="ingresoDatosR">
+                    <span class="datosUser">Apellido</span>
+                    <input class="inputRegistro"  type="text" placeholder="Tu apellido" required>
+                </div>
+                <div class="ingresoDatosR ">
+                    <span class="datosUser ">Correo Electrónico</span>
+                    <input class="inputRegistro"  type="text" placeholder="Tu correo" required>
+                </div>
+                <div class="ingresoDatosR">
+                    <span class="datosUser">Contraseña</span>
+                    <input class="inputRegistro" type="text" placeholder="Contraseña" required>
+                </div>
+                <div class="selectorGeneroR" >
+                    <select class="generoR" name="CONSULTA SOBRE" id="">
+                        <option value="">Seleccioná</option>
+                        <option value="">HAMBRIENTA</option>
+                        <option value="">HAMBRIENTO</option>
+                        <option value="">PREFIERO NO DECIRLO</option>                        
+                    </select>
+                </div>
+               
+                </div>               
+                </div>
+
+                <div class="botonR" >
+                <input class="botonRegistro" type="submit" value="REGISTRAR">
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
 
 
 </main>
