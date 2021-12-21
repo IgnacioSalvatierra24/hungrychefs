@@ -1,0 +1,124 @@
+.footerHC {
+    position: relative;
+    width: 100%;
+    background-color: #d9653ec7 ;
+    display: flex;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .iconosRedes {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        .listaRedes {
+            list-style: none;
+            .vincRedes {
+                font-size: 2rem;
+                color: $colorTexto;
+                margin: 0 10px;
+                display: inline-block;
+                transition: 0.8s; }             
+                .vincRedes:hover {
+                   
+                    color: $colorPrimero;
+                    margin: 5px;
+                    transform: translateY(-10px);                  
+                 
+                }
+            }
+        }
+    }
+
+    .mapaDeSitio {
+        position: relative;
+        width: 100%;        
+        display: flex;
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;       
+        .listaMenuS {
+            list-style: none;
+            .vincMdS {
+                text-decoration: none;
+                font-size: 1.3rem;
+                color: $colorTexto;
+                margin: 0 10px;
+                display: inline-block;
+                transition: 0.5;
+                opacity: 0.40;}
+                .vincMdS:hover{
+                    color: $colorPrimero;
+                    background-color: $colorClaro2;
+                    padding: 5px;
+                    text-decoration: underline;
+                    border-radius: 2px 2px 5px;
+                    opacity: 0.90;
+                }
+            
+        }
+    .copyright {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }        
+
+    }
+
+@media screen and (max-width: 453px) {
+    .footerHC{
+        .iconosRedes{
+            .listaRedes {
+                .vincRedes {
+                    margin-right: 40px;
+                }
+
+            }
+
+        }
+
+
+        .mapaDeSitio {
+            .listaMenuS {
+                .vincMdS {
+                    font-size: 1rem;
+                }
+
+            }
+        }
+            
+        }
+    }
+
+    @media screen and (max-width: 385px) {    
+            .mapaDeSitio {
+                flex-direction: column;
+                .listaMenuS {
+                    .vincMdS {
+                        font-size: 1rem;
+                        opacity: 1;
+                        text-decoration: underline;
+                    }
+    
+                }
+            }
+
+            .copyright {
+                font-size: 15px;
+            }
+                
+            
+        }
+
+
+    
+
+
