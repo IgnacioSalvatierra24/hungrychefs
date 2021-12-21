@@ -778,9 +778,6 @@ body {
   .card-group .card-body .textoCartaIndex {
     font-size: 20px; } }
 
-body {
-  background-color: #ebd9948c; }
-
 .imagen404 {
   width: 400px; }
 
@@ -790,7 +787,9 @@ body {
   flex-direction: column;
   gap: 40px;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #F4EEE2;
+  width: 100%; }
 
 .tit404 {
   color: #342222;
@@ -823,4 +822,14 @@ body {
     font-size: 2rem; }
   .subtit404 {
     font-size: 1rem;
+    text-align: center; } }
+
+@media screen and (max-width: 539px) {
+  .imagen404 {
+    width: 80%; }
+  .tit404 {
+    font-size: 3rem;
+    text-align: center; }
+  .subtit404 {
+    font-size: 1.4rem;
     text-align: center; } }
