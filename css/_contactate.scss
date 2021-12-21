@@ -98,6 +98,8 @@
     letter-spacing: 10px;
     border: none;
     margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 5px;
     
 }
 .botonContacto:hover {
@@ -110,7 +112,8 @@
 
 .botonConsultaSobre {
     border: none; 
-    font-size: 1.3em;  
+    font-size: 1.3em;
+
     background-color: $colorClaro2;
 }
 
