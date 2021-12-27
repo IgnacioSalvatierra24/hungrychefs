@@ -824,3 +824,7 @@ body {
   .subtit404 {
     font-size: 1.4rem;
     text-align: center; } }
+
+@media screen and (max-width: 1024px) {
+  .botonVolver {
+    margin-bottom: 150px; } }
